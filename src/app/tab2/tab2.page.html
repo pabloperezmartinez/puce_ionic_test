@@ -1,9 +1,9 @@
 <ion-header [translucent]="true">
   <ion-toolbar color="primary">
     <ion-title>
-      PUCE APP
+      PUCE App
     </ion-title>
-    <ion-buttons slot="primary">
+    <ion-buttons slot="end">
       <ion-button>
         <ion-icon slot="icon-only" name="log-out"></ion-icon>
       </ion-button>
@@ -12,11 +12,60 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+  <div class="card-container">
+    <ion-list lines="none">
+      <ion-item>
+        <ion-avatar slot="start">
+          <img src="https://www.informador.mx/__export/1666648926741/sites/elinformador/img/2022/10/24/tobey_crop1666646404204.jpg_423682103.jpg" alt="">
+        </ion-avatar>
+        <ion-label>
+          <ion-text color="primary">
+            <strong>
+              AGUIRRE RODRIGUEZ FABIAN RAFAEL
+            </strong>
+          </ion-text>
+          <ion-text color="medium">
+            <div>12344656767</div>
+            <div>PUCETEC</div>
+          </ion-text>
+        </ion-label>
+      </ion-item>
+      
+      <ion-item>
+        <div class="qr-container">
+          <img class="qr-code" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8aacyx8E5NMn2JuVPr84m23ynTImTKGi1AJBDLzDZ1w&s" alt="">
+        </div>
+      </ion-item>
+      
+      <ion-item>
+        <ion-grid>
+          <ion-row>
+            <ion-col size="6">
+              <ion-button color="light">
+                <div>
+                  <ion-icon name="book-outline" size="large"></ion-icon>
+                  <br>Biblioteca
+                </div>
+              </ion-button>
+            </ion-col>
+            <ion-col size="6">
+              <ion-button color="light">
+                <div>
+                  <ion-icon name="cash-outline" size="large"></ion-icon>
+                  <br>Prefactura
+                </div>
+              </ion-button>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-item>
+    </ion-list>
+  </div>
+  <ion-toast
+    trigger="open-toast"
+    [duration]="3000"
+    message="Estimado colaborador de la PUCE, existe una alerta de emergencia por lo cual las clases se suspenderán desde el 1 de marzo de 2024 al 10 de marzo del 2024"
+    class="custom-toast"
+    [buttons]="toastButtons"
+  ></ion-toast>
 </ion-content>

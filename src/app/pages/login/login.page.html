@@ -1,0 +1,17 @@
+<ion-content [fullscreen]="true">
+  <div class="login-container">
+    <ion-card>
+      <div class="center-aligned-img">
+        <img src="https://www.puce.edu.ec/wp-content/uploads/2020/09/cropped-isotipo-PUCE.png" class="logo">
+        <ion-text color="primary">
+          <h1>PUCE App</h1>
+        </ion-text>
+      </div>
+      <ion-card-content>
+        <ion-input label="Email" label-placement="floating" placeholder="usuario@puce.edu.ec"></ion-input>
+        <ion-input label="Contraseña" label-placement="floating" type="password"></ion-input>
+        <ion-button expand="block" (click)="goToTabs()">Ingresar</ion-button>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>
