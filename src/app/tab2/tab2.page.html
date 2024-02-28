@@ -57,15 +57,18 @@
               </ion-button>
             </ion-col>
           </ion-row>
+          <ion-row>
+            <ion-col size="6" offset="4">
+              <ion-button color="light" href="/campus">
+                <div>
+                  <ion-icon name="map-outline" size="large"></ion-icon>
+                  <br>Campus
+                </div>
+              </ion-button>
+            </ion-col>
+          </ion-row>
         </ion-grid>
       </ion-item>
     </ion-list>
   </div>
-  <ion-toast
-    trigger="open-toast"
-    [duration]="3000"
-    message="Estimado colaborador de la PUCE, existe una alerta de emergencia por lo cual las clases se suspenderán desde el 1 de marzo de 2024 al 10 de marzo del 2024"
-    class="custom-toast"
-    [buttons]="toastButtons"
-  ></ion-toast>
 </ion-content>

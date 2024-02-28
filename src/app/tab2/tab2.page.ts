@@ -16,7 +16,7 @@ export class Tab2Page{
   constructor(private toastController: ToastController) {}
 
   async ionViewDidEnter() {
-    const toast = await this.toastController.create({
+    /*const toast = await this.toastController.create({
       message: 'Estimado miembro de la comunidad: Las clases se han suspendido desde el día 1 de marzo de 2024 indefinidamente debido al paro nacional',
       color: 'danger',
       duration: 10000,
@@ -24,6 +24,6 @@ export class Tab2Page{
       buttons: this.toastButtons
     });
 
-    await toast.present();
+    await toast.present();*/
   }
 }
